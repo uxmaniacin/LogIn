@@ -1,0 +1,139 @@
+#home {
+  margin: 0;
+  padding: 0;
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: transparent;
+}
+
+.box {
+  position: relative;
+  width: 450px;
+  padding: 45px;
+  margin: auto;
+  background: rgba(0,0,0,0.7);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0,0,0,0.5);
+  border-radius: 10px;
+  -webkit-animation: mymove 2s;  /* Safari 4.0 - 8.0 */
+  -webkit-animation-fill-mode: forwards; /* Safari 4.0 - 8.0 */
+  animation: mymove 2s;
+  animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes mymove {
+    from {top: 0px;}
+    to {top: 250px;}
+}
+
+@keyframes mymove {
+    from {top: 0px;}
+    to {top: 250px;}
+}
+
+.box h2 {
+  font-family: "Julius Sans One", sans-serif;
+  letter-spacing: 2px;
+  margin: 0 0 30px;
+  padding: 10px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.box .inputBox {
+  position: relative;
+  font-family: "Quicksand"
+}
+
+.box .inputBox input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #ffffff;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #ffffff;
+  outline: none;
+  background: transparent
+}
+
+.box .inputBox label {
+  position: absolute;
+  top: 0;
+  left: 40px;
+  padding: 10px 0;
+  font-size: 18px;
+  color: #fff;
+  opacity: 0.7;
+  pointer-events: none;
+  transition: .5s;
+}
+
+.inputBox i {
+  position: absolute;
+  top: 15px;
+  left: 5px;
+  color: white;
+  opacity: 0.8;
+}
+
+.box .inputBox input:focus ~ label,
+.box .inputBox input:valid ~ label {
+  top: -20px;
+  left: 40px;
+  color: #03a9f4;
+  font-size: 14px;
+}
+
+.box input[type="text"] {
+  padding-left: 40px;
+}
+
+.box input[type="password"] {
+  padding-left: 40px;
+}
+
+.eyeOpenicon {
+  width: 30px;
+  position: absolute;
+  left: 330px;
+  top: 10px;
+}
+
+.box input[type="submit"] {
+  background: transparent;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  padding: 15px 25px;
+  color: #fff;
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  letter-spacing: 1px;
+  background: #03a9f4;
+  margin: 5px 0;
+  -webkit-animation-name: coloranim; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+  animation-name: coloranim;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes coloranim {
+  0%   {background-color: #03a9f4;}
+  50%  {background-color: #f52f61;}
+  100%  {background-color: #03a9f4;}
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes coloranim {
+  0%   {background-color: #03a9f4;}
+  50%  {background-color: #f52f61;}
+  100%  {background-color: #03a9f4;}
+}
+
+/*.box input[type="submit"]:hover {
+  background: #006be8;
+  transition: 1s;
+}
+*/

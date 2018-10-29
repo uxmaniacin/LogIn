@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="utf-8">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One|Quicksand|Raleway" rel="stylesheet">
+  </head>
+  <body id="home" style="background-image: url(images/background.jpg);">
+    <section>
+      <div>
+        <div class="box">
+          <h2>Login</h2>
+          <form>
+            <div class="inputBox">
+              <input type="text" name="" required="">
+              <label>Username</label>
+              <i class="glyphicon glyphicon-user"></i>
+            </div>
+            <div class="inputBox">
+              <input type="password" name="" id="myPassword" required="">
+              <label>Password</label>
+              <i class="glyphicon glyphicon-lock"></i>
+              <img src="images/eyeOpenicon.png" class="eyeOpenicon" onmouseover="mouseoverPass();" onmouseout="mouseoutPass();" />
+
+            </div>
+            <input type="submit" name="" value="SUBMIT">
+          </form>
+        </div>
+      </div>
+
+
+
+
+      <script>
+      function mouseoverPass(obj) {
+        var obj = document.getElementById('myPassword');
+        obj.type = "text";
+      }
+      function mouseoutPass(obj) {
+        var obj = document.getElementById('myPassword');
+        obj.type = "password";
+      }
+      </script>
+  </body>
+</html>
